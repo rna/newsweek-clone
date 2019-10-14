@@ -110,6 +110,24 @@ main {
   height: auto;
 }
 
+
+.opinion-item h4 {
+  font-size: 17px;
+  font-weight: Bold;
+}
+
+.opinion-item div>a:hover {
+  color: red;
+}
+
+.opinion-item {
+  padding-top:10px;
+  border-bottom: 0.5px solid lightgrey;
+}
+.opinion-item:last-child{
+  border: none;
+}
+
 /* Layout Styles */
 .featured,
 .opinion {
