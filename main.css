@@ -60,7 +60,7 @@ main {
   padding-top: 30px;
   background-color: white;
 }
-
+/* Featured Stories Section */
 .grey-heading {
   font-size: 16px;
   font-weight: 700;
@@ -105,12 +105,18 @@ main {
   text-decoration:underline red;
 }
 
+/* Top Story Section */
 .top-story .img-wrap>img {
-  width:560px;
+  width:506px;
   height: auto;
 }
 
-
+/* Opinion Section */
+.opinion-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color:grey;
+}
 .opinion-item h4 {
   font-size: 17px;
   font-weight: Bold;
@@ -124,8 +130,30 @@ main {
   padding-top:10px;
   border-bottom: 0.5px solid lightgrey;
 }
-.opinion-item:last-child{
+.opinion-item:nth-child(7){
   border: none;
+}
+
+.signup-box {
+  margin:20px 0 10px 30px;
+  padding:20px;
+  width:300px;
+  height:150px;
+  background-color: #f4f5f6;
+  border:0.5px solid lightgray;
+}
+
+.signup-box a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+.signup-box div>p {
+  font-size: 17px;
+  color:black;
+  font-weight: bold;
+  line-height: 17px;
 }
 
 /* Layout Styles */
