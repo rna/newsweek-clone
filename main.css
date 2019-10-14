@@ -6,17 +6,19 @@ font-family: 'Roboto Condensed', sans-serif;
 font-family: Arial, Helvetica, sans-serif;
 */
 
-* {
+body {
   padding: 0;
-  margin: 0;
+  width:98%;
+  margin: 0 auto;
   font-family: "Roboto Condensed", sans-serif;
-}
-
-main {
-  background-color: white;
+  background-color: lightgray;
 }
 
 /* Header Styles */
+header {
+  border-bottom: 0.5px solid lightgrey;
+}
+
 nav ul:first-child {
   padding: 10px 10px 0 30px;
   background-color: red;
@@ -54,14 +56,69 @@ nav li input {
 }
 
 /* Main Section Styles */
+main {
+  padding-top: 30px;
+  background-color: white;
+}
+
+.grey-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color:grey;
+  line-height: 10px;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap img {
+  width:342px;
+  height: auto;
+}
+.img-wrap > a {
+  position: absolute;
+  padding:5px 10px;
+  bottom:0;
+  left:0;
+  background-color: #F3F2F2;
+  text-decoration: none;
+  color:red;
+  font-weight: 700;
+}
+
+.stories h2 {
+  font-size: 24px;
+  font-weight:bolder;
+}
+
+.stories p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.stories > a , .opinion-item div>a {
+  text-decoration: none;
+  color:black;
+}
+
+.stories > a:hover {
+  text-decoration:underline red;
+}
+
+.top-story .img-wrap>img {
+  width:560px;
+  height: auto;
+}
+
+/* Layout Styles */
 .featured,
 .opinion {
-  background-color: greenyellow;
-  height: 800px;
+  /* background-color: greenyellow; */
+  /* height: 800px; */
 }
 
 .top-story {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .the-magazine {
