@@ -82,7 +82,7 @@ main {
   font-weight: 700;
 }
 
-.stories h2 {
+.stories h2{
   font-size: 24px;
   font-weight:bolder;
 }
@@ -91,18 +91,29 @@ main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-.stories > a , .opinion-item div>a {
+.stories > a , .opinion-item div>a, .magazine-item>a  {
   text-decoration: none;
   color:black;
 }
 
-.stories > a:hover {
+.stories > a:hover , .magazine-item > a:hover  {
   text-decoration:underline red;
 }
 
-/* Top Story Section */
+/* Top Story Section *//*Styles to be fixed for scroll bar*/
+.top-story {
+  max-height: 1550px;
+  width:510;
+  overflow:auto;
+  scrollbar-width: 0;
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
 .top-story .img-wrap>img {
-  width:506px;
+  width:540px;
   height: auto;
 }
 
@@ -112,6 +123,7 @@ main {
   font-weight: bold;
   color:grey;
 }
+
 .opinion-item h4 {
   font-size: 17px;
   font-weight: Bold;
@@ -192,17 +204,71 @@ main {
   padding-top:20px;
 }
 
-.more-stories>p{
+.more-stories>p, .section-heading {
   padding-bottom:10px;
   border-bottom:0.5px solid lightgray;
 }
-/* Layout Styles */
 
+/* In The Magazine Section */
 .the-magazine {
-  height: 410px;
+  margin-top:30px;
 }
 
-.the-magazine div,
+.the-magazine .row {
+  margin-bottom: 25px;
+}
+.magazine-item h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.magazine-item img, .issue img {
+  width: 290px;
+  height: auto;
+}
+
+.issue div:nth-child(2){
+  background-color:#f4f5f6;
+  width: 290px;
+  padding: 10px;
+  text-align: center;
+}
+
+.issue div:nth-child(2):hover{
+  background-color:lightgrey;
+}
+
+.issue div:nth-child(2) a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.magazine-item-tag span {
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight:bold;
+}
+.magazine-item-tag a {
+  text-decoration: none;
+  padding: 5px;
+  color: red;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+.mag-items>div:nth-child(2){
+  padding-top:15px;
+}
+
+.magazine-item-tag {
+  padding-top:10px;
+}
+
+/* Layout Styles */
+
 .us div,
 .tech-science div {
   width: 300px;
