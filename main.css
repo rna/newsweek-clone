@@ -51,13 +51,9 @@ nav li input {
   font-weight: bolder;
 }
 
-.row {
-  margin-bottom: 30px;
-}
-
 /* Main Section Styles */
 main {
-  padding-top: 30px;
+  padding-top: 15px;
   background-color: white;
 }
 /* Featured Stories Section */
@@ -65,7 +61,6 @@ main {
   font-size: 16px;
   font-weight: 700;
   color:grey;
-  line-height: 10px;
 }
 
 .img-wrap {
@@ -156,16 +151,52 @@ main {
   line-height: 17px;
 }
 
-/* Layout Styles */
-.featured,
-.opinion {
-  /* background-color: greenyellow; */
-  /* height: 800px; */
+/* Culture & Travel grid Styles */
+.culture-travel {
+  padding-top:5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f5f7;
 }
 
-.top-story {
-  /* background-color: pink; */
+.culture-travel .info {
+  padding:20px 10px;
 }
+
+.culture-travel .info a {
+  text-decoration: none;
+  color:darkslategrey;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.culture-travel .info p {
+  font-size:14px;
+  color:darkgray;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.culture-travel .info button {
+  background-color: #C2D4D7;
+  border:none;
+  font-size: 14px;
+}
+
+.culture-travel .info button:hover {
+  background-color:black;
+  color:#C2D4D7;
+}
+
+/* MOre Stories Section */
+.more-stories {
+  padding-top:20px;
+}
+
+.more-stories>p{
+  padding-bottom:10px;
+  border-bottom:0.5px solid lightgray;
+}
+/* Layout Styles */
 
 .the-magazine {
   height: 410px;
