@@ -222,14 +222,20 @@ main {
   font-weight: 900;
 }
 
-.magazine-item img, .issue img {
-  width: 290px;
+.magazine-item img,.editors-pick-items img {
+  width: 21vw;
   height: auto;
+}
+
+.issue .img-wrap img {
+  width: 24vw;
+  height:350px;
+
 }
 
 .issue div:nth-child(2){
   background-color:#f4f5f6;
-  width: 290px;
+  width: 24vw;
   padding: 10px;
   text-align: center;
 }
@@ -263,9 +269,12 @@ main {
   padding-top:15px;
 }
 
-.magazine-item-tag {
+.magazine-item-tag, .editors-pick-items {
   padding-top:10px;
 }
+
+/* Editors Pick Section */
+
 
 /* Layout Styles */
 
@@ -276,7 +285,6 @@ main {
   background-color: blue;
 }
 
-.editors-pick div,
 .world div,
 .culture div {
   width: 300px;
