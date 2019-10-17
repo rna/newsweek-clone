@@ -8,7 +8,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 body {
   padding: 0;
-  width:98%;
+  width: 98%;
   margin: 0 auto;
   font-family: "Roboto Condensed", sans-serif;
   background-color: lightgray;
@@ -32,21 +32,21 @@ nav ul:nth-child(2) {
 }
 
 nav ul:nth-child(2) a {
-  color:black;
-  font-weight:bolder;
-  font-size:18px;
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
   text-decoration: none;
 }
 
 nav ul:nth-child(2) a:hover {
-  color:red;
+  color: red;
 }
 
 nav li input {
   border: none;
 }
 
-.logo a{
+.logo a {
   font-size: 5vw;
   font-weight: bolder;
 }
@@ -60,7 +60,7 @@ main {
 .grey-heading {
   font-size: 16px;
   font-weight: 700;
-  color:grey;
+  color: grey;
 }
 
 .img-wrap {
@@ -68,52 +68,55 @@ main {
 }
 
 .img-wrap img {
-  width:342px;
+  width: 342px;
   height: auto;
 }
 .img-wrap > a {
   position: absolute;
-  padding:5px 10px;
-  bottom:0;
-  left:0;
-  background-color: #F3F2F2;
+  padding: 5px 10px;
+  bottom: 0;
+  left: 0;
+  background-color: #f3f2f2;
   text-decoration: none;
-  color:red;
+  color: red;
   font-weight: 700;
 }
 
-.stories h2{
+.stories h2 {
   font-size: 24px;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .stories p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-.stories > a , .opinion-item div>a, .magazine-item>a  {
+.stories > a,
+.opinion-item div > a,
+.magazine-item > a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.stories > a:hover , .magazine-item > a:hover  {
-  text-decoration:underline red;
+.stories > a:hover,
+.magazine-item > a:hover {
+  text-decoration: underline red;
 }
 
-/* Top Story Section *//*Styles to be fixed for scroll bar*/
+/* Top Story Section */ /*Styles to be fixed for scroll bar*/
 .top-story {
   max-height: 1550px;
-  width:510;
-  overflow:auto;
+  width: 510;
+  overflow: auto;
   scrollbar-width: 0;
 }
 
 ::-webkit-scrollbar {
-  display:none;
+  display: none;
 }
 
-.top-story .img-wrap>img {
-  width:540px;
+.top-story .img-wrap > img {
+  width: 540px;
   height: auto;
 }
 
@@ -121,7 +124,7 @@ main {
 .opinion-item p {
   font-size: 14px;
   font-weight: bold;
-  color:grey;
+  color: grey;
 }
 
 .opinion-item h4 {
@@ -129,89 +132,90 @@ main {
   font-weight: Bold;
 }
 
-.opinion-item div>a:hover {
+.opinion-item div > a:hover {
   color: red;
 }
 
 .opinion-item {
-  padding-top:10px;
+  padding-top: 10px;
   border-bottom: 0.5px solid lightgrey;
 }
-.opinion-item:nth-child(7){
+.opinion-item:nth-child(7) {
   border: none;
 }
 
 .signup-box {
-  margin:20px 0 10px 30px;
-  padding:20px;
-  width:300px;
-  height:150px;
+  margin: 20px 0 10px 30px;
+  padding: 20px;
+  width: 300px;
+  height: 150px;
   background-color: #f4f5f6;
-  border:0.5px solid lightgray;
+  border: 0.5px solid lightgray;
 }
 
 .signup-box a {
   text-decoration: none;
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
-.signup-box div>p {
+.signup-box div > p {
   font-size: 17px;
-  color:black;
+  color: black;
   font-weight: bold;
   line-height: 17px;
 }
 
 /* Culture & Travel grid Styles */
 .culture-travel {
-  padding-top:5px;
+  padding-top: 5px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f5f7;
 }
 
 .culture-travel .info {
-  padding:20px 10px;
+  padding: 20px 10px;
 }
 
 .culture-travel .info a {
   text-decoration: none;
-  color:darkslategrey;
+  color: darkslategrey;
   font-size: 20px;
   line-height: 0;
 }
 
 .culture-travel .info p {
-  font-size:14px;
-  color:darkgray;
+  font-size: 14px;
+  color: darkgray;
   text-align: justify;
   text-justify: inter-word;
 }
 
 .culture-travel .info button {
-  background-color: #C2D4D7;
-  border:none;
+  background-color: #c2d4d7;
+  border: none;
   font-size: 14px;
 }
 
 .culture-travel .info button:hover {
-  background-color:black;
-  color:#C2D4D7;
+  background-color: black;
+  color: #c2d4d7;
 }
 
 /* MOre Stories Section */
 .more-stories {
-  padding-top:20px;
+  padding-top: 20px;
 }
 
-.more-stories>p, .section-heading {
-  padding-bottom:10px;
-  border-bottom:0.5px solid lightgray;
+.more-stories > p,
+.section-heading {
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid lightgray;
 }
 
 /* In The Magazine Section */
 .the-magazine {
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .the-magazine .row {
@@ -222,29 +226,29 @@ main {
   font-weight: 900;
 }
 
-.magazine-item img,.editors-pick-items img {
+.magazine-item img,
+.editors-pick-items img {
   width: 21vw;
   height: auto;
 }
 
 .issue .img-wrap img {
   width: 24vw;
-  height:350px;
-
+  height: 350px;
 }
 
-.issue div:nth-child(2){
-  background-color:#f4f5f6;
+.issue div:nth-child(2) {
+  background-color: #f4f5f6;
   width: 24vw;
   padding: 10px;
   text-align: center;
 }
 
-.issue div:nth-child(2):hover{
-  background-color:lightgrey;
+.issue div:nth-child(2):hover {
+  background-color: lightgrey;
 }
 
-.issue div:nth-child(2) a{
+.issue div:nth-child(2) a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -255,26 +259,61 @@ main {
   background-color: red;
   color: white;
   font-size: 16px;
-  font-weight:bold;
+  font-weight: bold;
 }
 .magazine-item-tag a {
   text-decoration: none;
   padding: 5px;
   color: red;
   font-size: 16px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.mag-items>div:nth-child(2){
-  padding-top:15px;
+.mag-items > div:nth-child(2) {
+  padding-top: 15px;
 }
 
-.magazine-item-tag, .editors-pick-items {
-  padding-top:10px;
+.magazine-item-tag {
+  padding-top: 10px;
 }
 
-/* Editors Pick Section */
+/* Featured Slideshows Section */
+.editors-pick-items,
+.slideshow-items {
+  padding-top: 15px;
+}
 
+.slideshow-items .img-wrap > img {
+  width: 30vw;
+  height: 20vw;
+}
+
+.slides-no > img {
+  width: 60px;
+  height: auto;
+}
+
+.slideshow-items .img-wrap {
+  position: relative;
+  text-align: center;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.slideshow-items .img-wrap > a {
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.slideshow-items .img-wrap > p {
+  position: absolute;
+  bottom: -4%;
+  left: 6%;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* Layout Styles */
 
@@ -292,7 +331,6 @@ main {
   background-color: plum;
 }
 
-.slideshows div,
 .business div,
 .sports div {
   width: 400px;
@@ -301,10 +339,10 @@ main {
 }
 
 .subscribe div {
-    background-color: springgreen;
+  background-color: springgreen;
 }
 
 footer {
-    height: 100px;
-    background-color:darkgray;
+  height: 100px;
+  background-color: darkgray;
 }
