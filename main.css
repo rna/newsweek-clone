@@ -19,6 +19,11 @@ header {
   border-bottom: 0.5px solid lightgrey;
 }
 
+footer ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
 header nav ul:first-child {
   padding: 10px 10px 0 10px;
   background-color: red;
@@ -31,11 +36,92 @@ header nav ul:nth-child(2) {
   height: 50px;
 }
 
+footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.img-wrap > a {
+  position: absolute;
+  padding: 5px 10px;
+  bottom: 0;
+  left: 0;
+  background-color: #f3f2f2;
+  text-decoration: none;
+  color: red;
+  font-weight: 700;
+}
+
+.logo a {
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+.signup-box a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.magazine-item-tag a {
+  text-decoration: none;
+  padding: 5px;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.side-heading a {
+  color: red;
+  text-decoration: none;
+}
+
+.stories > a,
+.magazine-item > a,
+.opinion-item div > a {
+  text-decoration: none;
+  color: black;
+}
+
+footer nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 header nav ul:nth-child(2) a {
   color: black;
   font-weight: bolder;
   font-size: 18px;
   text-decoration: none;
+}
+
+.stories > a:hover,
+.magazine-item > a:hover {
+  text-decoration: underline red;
+}
+
+.culture-travel .info a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.slideshow-items .img-wrap > a {
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.opinion-item div > a:hover {
+  color: red;
+}
+
+.issue div:nth-child(2) a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 header nav ul:nth-child(2) a:hover {
@@ -44,11 +130,6 @@ header nav ul:nth-child(2) a:hover {
 
 header nav li input {
   border: none;
-}
-
-.logo a {
-  font-size: 5vw;
-  font-weight: bolder;
 }
 
 /* Main Section Styles */
@@ -73,17 +154,6 @@ main {
   height: auto;
 }
 
-.img-wrap > a {
-  position: absolute;
-  padding: 5px 10px;
-  bottom: 0;
-  left: 0;
-  background-color: #f3f2f2;
-  text-decoration: none;
-  color: red;
-  font-weight: 700;
-}
-
 .stories h2 {
   font-size: 24px;
   font-weight: bolder;
@@ -92,18 +162,6 @@ main {
 .stories p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-}
-
-.stories > a,
-.opinion-item div > a,
-.magazine-item > a {
-  text-decoration: none;
-  color: black;
-}
-
-.stories > a:hover,
-.magazine-item > a:hover {
-  text-decoration: underline red;
 }
 
 /* Top Story Section */
@@ -117,6 +175,29 @@ main {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.culture-travel img {
+  width: 17vw;
+  height: auto;
+}
+
+.magazine-item img,
+.editors-pick-items img {
+  width: 21vw;
+  height: auto;
+}
+
+.slides-no > img {
+  width: 60px;
+  height: auto;
+}
+
+footer .newsletter > img {
+  width: 200px;
+  height: 300px;
+  padding-right: 20px;
+  object-fit: fill;
 }
 
 .top-story .img-wrap > img {
@@ -134,10 +215,6 @@ main {
 .opinion-item h4 {
   font-size: 17px;
   font-weight: Bold;
-}
-
-.opinion-item div > a:hover {
-  color: red;
 }
 
 .opinion-item {
@@ -158,10 +235,10 @@ main {
   border: 0.5px solid lightgray;
 }
 
-.signup-box a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.more-stories > p,
+.section-heading {
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid lightgray;
 }
 
 .signup-box div > p {
@@ -178,20 +255,8 @@ main {
   background-color: #f4f5f7;
 }
 
-.culture-travel img {
-  width: 17vw;
-  height: auto;
-}
-
 .culture-travel .info {
   padding: 20px 10px;
-}
-
-.culture-travel .info a {
-  text-decoration: none;
-  color: darkslategrey;
-  font-size: 20px;
-  line-height: 0;
 }
 
 .culture-travel .info p {
@@ -217,12 +282,6 @@ main {
   padding-top: 20px;
 }
 
-.more-stories > p,
-.section-heading {
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid lightgray;
-}
-
 /* In The Magazine Section */
 .the-magazine {
   margin-top: 30px;
@@ -237,15 +296,23 @@ main {
   font-weight: 900;
 }
 
-.magazine-item img,
-.editors-pick-items img {
-  width: 21vw;
-  height: auto;
-}
-
 .issue .img-wrap img {
   width: 24vw;
   height: 350px;
+}
+
+footer .newsletter div {
+  align-content: center;
+  padding-right: 20px;
+  margin: auto 0;
+}
+
+footer nav > div:first-child {
+  border-bottom: 0.5px solid lightgrey;
+}
+
+footer nav > div:last-child {
+  padding-top: 10px;
 }
 
 .issue div:nth-child(2) {
@@ -255,14 +322,12 @@ main {
   text-align: center;
 }
 
-.issue div:nth-child(2):hover {
-  background-color: lightgrey;
+.mag-items > div:nth-child(2) {
+  padding-top: 15px;
 }
 
-.issue div:nth-child(2) a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.issue div:nth-child(2):hover {
+  background-color: lightgrey;
 }
 
 .magazine-item-tag span {
@@ -271,18 +336,6 @@ main {
   color: white;
   font-size: 16px;
   font-weight: bold;
-}
-
-.magazine-item-tag a {
-  text-decoration: none;
-  padding: 5px;
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.mag-items > div:nth-child(2) {
-  padding-top: 15px;
 }
 
 .magazine-item-tag {
@@ -294,6 +347,7 @@ main {
 .slideshows {
   padding: 30px 0;
 }
+
 .editors-pick-items,
 .slideshow-items {
   padding-top: 15px;
@@ -304,23 +358,11 @@ main {
   height: 20vw;
 }
 
-.slides-no > img {
-  width: 60px;
-  height: auto;
-}
-
 .slideshow-items .img-wrap {
   position: relative;
   text-align: center;
   color: red;
   margin-bottom: 15px;
-}
-
-.slideshow-items .img-wrap > a {
-  position: absolute;
-  padding: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .slideshow-items .img-wrap > p {
@@ -343,11 +385,6 @@ main {
   height: auto;
 }
 
-.side-heading a {
-  color: red;
-  text-decoration: none;
-}
-
 .side-heading h4 {
   font-weight: 700;
 }
@@ -361,6 +398,7 @@ main {
 .side-grid div.opinion-item:nth-child(2) {
   padding: 10px 0;
 }
+
 .side-grid div.opinion-item:last-child {
   padding: 10px 0;
   border-bottom: none;
@@ -401,42 +439,14 @@ footer .newsletter {
   border-left: none;
 }
 
-footer .newsletter > img {
-  width: 200px;
-  height: 300px;
-  padding-right: 20px;
-  object-fit: fill;
-}
-
-footer .newsletter div {
-  align-content: center;
-  padding-right: 20px;
-  margin: auto 0;
-}
-
 footer .fat-footer {
   margin: 0 20px;
   padding-bottom: 30px;
   border-bottom: 0.5px solid lightgrey;
 }
 
-footer ul {
-  list-style: none;
-  padding-inline-start: 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: grey;
-}
-
 footer nav {
   padding: 30px 50px 10px 50px;
-}
-
-footer nav a:hover {
-  color: black;
-  text-decoration: none;
 }
 
 footer span.logo {
@@ -462,14 +472,6 @@ footer .menu li::after {
   content: "   |";
 }
 
-footer nav > div:first-child {
-  border-bottom: 0.5px solid lightgrey;
-}
-
-footer nav > div:last-child {
-  padding-top: 10px;
-}
-
 @media only screen and (max-width: 768px) {
   .featured .img-wrap img {
     width: 45vw;
@@ -491,9 +493,21 @@ footer nav > div:last-child {
 }
 
 @media only screen and (max-width: 576px) {
+  .magazine-item img,
+  .culture-travel img {
+    width: 90vw;
+    height: auto;
+  }
+
+  footer .newsletter > img {
+    width: 80vw;
+    height: 150px;
+    padding-right: 20px;
+    object-fit: fill;
+  }
+
   .featured .img-wrap img,
   .top-story .img-wrap img,
-  .magazine-item img,
   .the-magazine .img-wrap img,
   .editors-pick-items .img-wrap img,
   .slideshow-items .img-wrap > img,
@@ -502,10 +516,6 @@ footer nav > div:last-child {
     height: auto;
   }
 
-  .culture-travel img {
-    width: 90vw;
-    height: auto;
-  }
   .issue div:nth-child(2) {
     width: 90vw;
     margin-bottom: 20px;
@@ -520,13 +530,6 @@ footer nav > div:last-child {
   .subscribe {
     flex-direction: column;
     justify-content: center;
-  }
-
-  footer .newsletter > img {
-    width: 80vw;
-    height: 150px;
-    padding-right: 20px;
-    object-fit: fill;
   }
 
   footer .image-layover {
