@@ -106,12 +106,13 @@ main {
   text-decoration: underline red;
 }
 
-/* Top Story Section */ /*Styles to be fixed for scroll bar*/
+/* Top Story Section */
 .top-story {
+  position: sticky;
   max-height: 1550px;
-  width: 510;
-  overflow: auto;
-  scrollbar-width: 0;
+  overflow-y: scroll;
+  min-width:540px;
+  scrollbar-width: none;  
 }
 
 ::-webkit-scrollbar {
@@ -457,3 +458,4 @@ footer nav>div:first-child {
 footer nav>div:last-child {
   padding-top: 10px;
 }
+
