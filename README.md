@@ -11,7 +11,7 @@ This project clones the Newsweek home page using native HTML, CSS and Bootstrap 
 URL: [Newsweek](https://www.newsweek.com/)
 
 # Authors
-+ Ramesh Naidu(https://github.com/rna)
++ [Ramesh Naidu](https://github.com/rna)
 
 # Preview
 Live Version: [Preview](https://rna.github.io/newsweek-clone)
